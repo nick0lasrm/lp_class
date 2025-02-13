@@ -33,7 +33,7 @@ Para mais informações acesse [Aula 01: Fluxogramas.](https://www.notion.so/cai
    
    ```mermaid
    flowchart TD
-      A((Início)) --> B[\Digite sua nota \]
+      A((Início)) --> B[\Digite sua Nota \]
       B --> C{ Nota >= 50? }
       C --> |Sim| D[\Digite sua frequência\]
       C --> |Não| H(( ))
@@ -52,6 +52,9 @@ Para mais informações acesse [Aula 01: Fluxogramas.](https://www.notion.so/cai
    flowchart TD
       A((Início)) --> B[\Digite um número1\]
       B --> C[\Digite outro número2\]
+      C --> D[Soma = número1 + número2]
+      D --> E[/Soma/]
+      E --> F([Fim])
 
    ```
    
@@ -59,7 +62,13 @@ Para mais informações acesse [Aula 01: Fluxogramas.](https://www.notion.so/cai
    
    ```mermaid
    flowchart TD
-      C["Sua resposta aqui!"]
+      A((Inicio)) --> B[\Digite um número\]
+      B --> C{ numero > 0? }
+      C --> |Sim| D[/Número é positivo/]
+      C --> |Nao| E[/Número é negativo/]
+      D --> F(( ))
+      E --> F(( ))
+      F --> Fi([Fim])
    ```
    
 5. Desenvolva um fluxograma que leia a idade de uma pessoa e indique se ela pode votar.

@@ -76,6 +76,7 @@ Para mais informações acesse [Aula 01: Fluxogramas.](https://www.notion.so/cai
    ```mermaid
    flowchart TD
       D["Sua resposta aqui!"]
+      
    ```
    
 6. Crie um fluxograma que leia dois números e determine o maior entre eles.

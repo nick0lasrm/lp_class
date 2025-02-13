@@ -36,21 +36,23 @@ Para mais informações acesse [Aula 01: Fluxogramas.](https://www.notion.so/cai
       A((Início)) --> B[\Digite sua nota \]
       B --> C{ Nota >= 50? }
       C --> |Sim| D[\Digite sua frequência\]
-      C --> |Não| E[/Reprovado/]
+      C --> |Não| H(( ))
+      H --> E[/Reprovado/]
       D --> F{ Frequência >= 75%?}
       F --> |Sim| G[/Aprovado/]
-      F --> |Não| E
-      E --> Fim([Fim])
-      G --> Fim
+      G --> I(( ))
+      F --> |Não|H
+      E --> I
+      I --> Fim([Fim])
    ```
    
 3. Crie um fluxograma para calcular a soma de dois números fornecidos pelo usuário.
    
    ```mermaid
    flowchart TD
-      A((Início)) --> B[\Digite um número\]
-      B --> C[\Digite outro número\]
-      
+      A((Início)) --> B[\Digite um número1\]
+      B --> C[\Digite outro número2\]
+
    ```
    
 4. Elabore um fluxograma que leia um número e exiba se ele é positivo ou negativo.

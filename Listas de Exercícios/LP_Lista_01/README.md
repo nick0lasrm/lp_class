@@ -75,7 +75,7 @@ Para mais informações acesse [Aula 01: Fluxogramas.](https://www.notion.so/cai
    
    ```mermaid
    flowchart TD
-      D["Sua resposta aqui!"]gsasasg
+      D["Sua resposta aqui!"]
       
    ```
    

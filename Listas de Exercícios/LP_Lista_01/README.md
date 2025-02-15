@@ -110,7 +110,9 @@ Para mais informações acesse [Aula 01: Fluxogramas.](https://www.notion.so/cai
       D --> E{N1 >= N2?}
       E --> |Sim| F{N1 >= N3?}
       E --> |Não| G{N2 >= N3?}
-      F --> |Sim| H{N1 = N3? \n E \n N1 = N2? \n E \n N2 = N3?}
+      F --> |Sim| H[/N1 > N2 e N3/]
+      F --> |Não| I{N1 = N3?}
+      
    ```
    
 8. Construa um fluxograma para calcular o fatorial de um número fornecido pelo usuário.

@@ -132,6 +132,7 @@ Para mais informações acesse [Aula 01: Fluxogramas.](https://www.notion.so/cai
    ```mermaid
    flowchart TD
       A((Inicio)) --> B[\Digite um número\]
+   
       
    ```
    

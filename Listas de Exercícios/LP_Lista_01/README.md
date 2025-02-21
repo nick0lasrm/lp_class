@@ -144,13 +144,14 @@ Para mais informações acesse [Aula 01: Fluxogramas.](https://www.notion.so/cai
    > - 11 % 3 = 2
    
    ```mermaid
-    
-   flowchart TD
+    flowchart TD
       A((Inicio)) --> B[\Digite N1\]
-      B --> C[Par = N1 % 2 == 0]
-      C --> D[/Par/]
-      D --> Fi([Fim])
-   
+      B --> C{N1 % 2 == 0}
+      C --> |Sim| D[/N1 é par/]
+      C --> |Não| E[/N1 não é par/]
+      D --> F(( ))
+      E --> F
+      F --> Fi([Fim])
    ```
    
 10. Elabore um fluxograma para verificar se um número digitado pelo usuário é primo.

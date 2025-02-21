@@ -84,7 +84,7 @@ Para mais informações acesse [Aula 01: Fluxogramas.](https://www.notion.so/cai
    ```
    
 6. Crie um fluxograma que leia dois números e determine o maior entre eles.
-   
+    
    ```mermaid
     flowchart TD
       A((Inicio)) --> B[\Digite N1\]
@@ -112,14 +112,27 @@ Para mais informações acesse [Aula 01: Fluxogramas.](https://www.notion.so/cai
       E --> |Não| G{N2 >= N3?}
       F --> |Sim| H[/N1 > N2 e N3/]
       F --> |Não| I{N1 = N3?}
-      
+      G --> |Sim| J[/N2 > N1 e N3/]
+      G --> |Não| K{N2 = N3?}
+      K --> |Sim| L[/N2 = N3/]
+      K --> |Não| M[/N3 > N1 e N2/]
+      I --> |Sim| N[/N1 = N3/]
+      I --> |Não| O[/N3 > N1 e N2/]
+      H --> P(( ))
+      J --> P
+      L --> P
+      M --> P
+      N --> P
+      O --> P
+      P --> Fi([Fim])
    ```
    
 8. Construa um fluxograma para calcular o fatorial de um número fornecido pelo usuário.
    
    ```mermaid
    flowchart TD
-      G["Sua resposta aqui!"]
+      A((Inicio)) --> B[\Digite um número\]
+      
    ```
    
 9. Elabore um fluxograma para verificar se um número digitado pelo usuário é par.

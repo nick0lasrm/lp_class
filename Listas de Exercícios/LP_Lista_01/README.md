@@ -131,9 +131,8 @@ Para mais informações acesse [Aula 01: Fluxogramas.](https://www.notion.so/cai
    
    ```mermaid
    flowchart TD
-      A((Inicio)) --> B[\Digite um número\]
-   
-      
+      A((Inicio)) --> B[\Digite N1\]
+      B --> C[Fatorial = N1 ]
    ```
    
 9. Elabore um fluxograma para verificar se um número digitado pelo usuário é par.
@@ -145,11 +144,13 @@ Para mais informações acesse [Aula 01: Fluxogramas.](https://www.notion.so/cai
    > - 11 % 3 = 2
    
    ```mermaid
-   
+    
    flowchart TD
-      A((Inicio)) --> B[\Digite um numero\]
-      B --> C[/num1/]
-      C --> D[num1 % 2]
+      A((Inicio)) --> B[\Digite N1\]
+      B --> C[Par = N1 % 2 == 0]
+      C --> D[/Par/]
+      D --> Fi([Fim])
+   
    ```
    
 10. Elabore um fluxograma para verificar se um número digitado pelo usuário é primo.

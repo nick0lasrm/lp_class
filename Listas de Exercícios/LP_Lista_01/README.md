@@ -91,8 +91,8 @@ Para mais informações acesse [Aula 01: Fluxogramas.](https://www.notion.so/cai
       B --> C[\Digite N2 \]
       C --> D{N1 >= N2?}
       D --> |Sim| E[/N1 > N2/]
-      D --> |Não| F{N1 = N2?}
-      F --> |Sim| H[/N1 = N2/]
+      D --> |Não| F{N1 == N2?}
+      F --> |Sim| H[/N1 == N2/]
       F --> |Não| J[/N2 > N1/]
       E --> G(( ))
       J --> G
@@ -107,16 +107,16 @@ Para mais informações acesse [Aula 01: Fluxogramas.](https://www.notion.so/cai
       A((Inicio)) --> B[\Digite N1\]
       B --> C[\Digite N2\]
       C --> D[\Digite N3\]
-      D --> E{N1 >= N2?}
-      E --> |Sim| F{N1 >= N3?}
-      E --> |Não| G{N2 >= N3?}
+      D --> E{N1 > N2?}
+      E --> |Sim| F{N1 > N3?}
+      E --> |Não| G{N2 > N3?}
       F --> |Sim| H[/N1 > N2 e N3/]
-      F --> |Não| I{N1 = N3?}
+      F --> |Não| I{N1 == N3?}
       G --> |Sim| J[/N2 > N1 e N3/]
-      G --> |Não| K{N2 = N3?}
-      K --> |Sim| L[/N2 = N3/]
+      G --> |Não| K{N2 == N3?}
+      K --> |Sim| L[/N2 == N3/]
       K --> |Não| M[/N3 > N1 e N2/]
-      I --> |Sim| N[/N1 = N3/]
+      I --> |Sim| N[/N1 == N3/]
       I --> |Não| O[/N3 > N1 e N2/]
       H --> P(( ))
       J --> P
@@ -131,8 +131,15 @@ Para mais informações acesse [Aula 01: Fluxogramas.](https://www.notion.so/cai
    
    ```mermaid
    flowchart TD
-      A((Inicio)) --> B[\Digite N1\]
-      B --> C[Fatorial = N1 ]
+      A((Inicio)) --> B[\Digite n\]
+      B --> C[r=1]
+      C --> D{n>1?}
+      D --> |Sim| E[r=r*n]
+      E --> F[n=n-1]
+      F --> D
+      D --> |Não| G[/Resposta = r/]
+      G --> fi([Fim])
+      
    ```
    
 9. Elabore um fluxograma para verificar se um número digitado pelo usuário é par.
@@ -146,7 +153,7 @@ Para mais informações acesse [Aula 01: Fluxogramas.](https://www.notion.so/cai
    ```mermaid
     flowchart TD
       A((Inicio)) --> B[\Digite N1\]
-      B --> C{N1 % 2 == 0}
+      B --> C{N1 % 2 == 0?}
       C --> |Sim| D[/N1 é par/]
       C --> |Não| E[/N1 não é par/]
       D --> F(( ))
@@ -159,5 +166,17 @@ Para mais informações acesse [Aula 01: Fluxogramas.](https://www.notion.so/cai
    ```mermaid
    
    flowchart TD
-      I["Sua resposta aqui!"]
+      A((Inicio)) --> B[\Digite um número\]
+      B --> C{n < 2?}
+      C --> |Sim| D[/Não é primo/]
+      C --> |Não| E[i=n/2]
+      E --> F{i>1?}
+      F --> |Sim| G{n % i == 0?}
+      F --> |Não| H[É primo]
+      G --> |Sim| D
+      G --> |Não| I[i=i-1]
+      I --> F
+      H --> J(( ))
+      D --> J
+      J --> Fi([Fim])
    ```

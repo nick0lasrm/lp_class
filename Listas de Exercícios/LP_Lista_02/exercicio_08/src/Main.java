@@ -1,5 +1,15 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+        double milimetro, pol;
+
+        System.out.println("Digite a medida em polegada: ");
+
+        Scanner in = new Scanner(System.in); // Configura o Scanner
+        pol = in.nextDouble();
+
+        milimetro = pol * 25.4;
+        System.out.println(pol + " pol equivale a " + milimetro + " mm");
     }
 }

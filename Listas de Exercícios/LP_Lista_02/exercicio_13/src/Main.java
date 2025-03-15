@@ -6,7 +6,7 @@ public class Main {
 
         System.out.println("Digíte o raio do círculo: ");
 
-        Scanner in = new Scanner(System.in); // Configura o Scanner
+        Scanner in = new Scanner(System.in);
         raio = in.nextDouble();
 
         area = (raio * raio) * 3.14;

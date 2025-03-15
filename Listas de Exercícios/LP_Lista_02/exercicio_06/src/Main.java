@@ -6,7 +6,7 @@ public class Main {
 
         System.out.println("Digite a velocidade em m/s: ");
 
-        Scanner in = new Scanner(System.in); // Configura o Scanner
+        Scanner in = new Scanner(System.in);
         ms = in.nextDouble();
 
         kmh = ms * 3.6;

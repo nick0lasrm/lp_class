@@ -6,7 +6,7 @@ public class Main {
 
         System.out.println("Digite a ditância em quilômetros: ");
 
-        Scanner in = new Scanner(System.in); // Configura o Scanner
+        Scanner in = new Scanner(System.in);
         km = in.nextDouble();
 
         miles = km / 1.609;

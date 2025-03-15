@@ -6,7 +6,7 @@ public class Main {
 
         System.out.println("Digite a medida em milimetros: ");
 
-        Scanner in = new Scanner(System.in); // Configura o Scanner
+        Scanner in = new Scanner(System.in);
         milimetro = in.nextDouble();
 
         pol = milimetro / 25.4;

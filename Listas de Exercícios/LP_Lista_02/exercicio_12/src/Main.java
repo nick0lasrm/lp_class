@@ -8,7 +8,7 @@ public class Main {
         System.out.println("Digite a primeira nota: ");
         System.out.println("Digite a segunda nota: ");
 
-        Scanner in = new Scanner(System.in); // Configura o Scanner
+        Scanner in = new Scanner(System.in);
         nota1 = in.nextDouble();
         nota2 = in.nextDouble();
 

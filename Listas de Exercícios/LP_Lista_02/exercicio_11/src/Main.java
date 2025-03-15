@@ -6,7 +6,7 @@ public class Main {
 
         System.out.println("Digite a temperatura em Celsius: ");
 
-        Scanner in = new Scanner(System.in); // Configura o Scanner
+        Scanner in = new Scanner(System.in);
         celsius = in.nextDouble();
 
         fahrenheit = celsius * 1.8 + 32;

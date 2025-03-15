@@ -10,7 +10,6 @@ public class Main {
         number = in.nextDouble();
 
         parte = number / 5;
-
         System.out.println("A quimta parte de " + number + " é " + parte);
     }
 }

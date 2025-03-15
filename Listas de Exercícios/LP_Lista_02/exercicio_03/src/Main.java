@@ -1,5 +1,16 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+        double number, parte;
+
+        System.out.println("Digite um número: ");
+
+        Scanner in = new Scanner(System.in);
+        number = in.nextDouble();
+
+        parte = number / 5;
+
+        System.out.println("A quimta parte de " + number + " é " + parte);
     }
 }

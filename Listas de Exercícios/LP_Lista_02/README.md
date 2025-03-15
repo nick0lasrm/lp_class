@@ -40,7 +40,7 @@ para milhas.
 
 12. Ler duas notas N1 e N2 e exibir a média. 
 
-      >Obs.: N1 tem peso 1 e N2 tem peso 2 e resultadodeve estar entre 0 e 10.
+      >Obs.: N1 tem peso 1 e N2 tem peso 2 e resultado deve estar entre 0 e 10.
 
 13. Receber o raio e um círculo e calcular sua área.
 

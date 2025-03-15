@@ -57,7 +57,7 @@ para milhas.
       >Equação do primeiro grau: $ax + b = 0$
 
 19. Receber os coeficientes $a$, $b$ e $c$ de uma equação do segundo grau e imprimir a solução.
-
+  
       >Equação do segundo grau: $ax^2 + bx + c = 0$
 
 20. Descobrir uma equação do segundo grau a partir de suas raízes:

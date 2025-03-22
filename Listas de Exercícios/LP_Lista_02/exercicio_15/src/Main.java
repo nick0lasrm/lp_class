@@ -11,7 +11,7 @@ public class Main {
         raio = in.nextFloat();
         altura = in.nextFloat();
 
-        volume =(float) 3.14 * raio * raio * altura;
+        volume =(float) Math.PI * raio * raio * altura;
 
         System.out.println("O volume do cilindro é de " + volume + "cm³");
     }

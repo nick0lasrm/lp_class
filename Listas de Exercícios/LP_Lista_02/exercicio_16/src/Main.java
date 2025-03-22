@@ -11,7 +11,7 @@ public class Main {
         raio = in.nextFloat();
         altura = in.nextFloat();
 
-        volume =(float) 3.14 * raio * raio * altura / 3;
+        volume =(float) Math.PI * raio * raio * altura / 3;
 
         System.out.println("O volume do cone é de " + volume + "cm³");
     }

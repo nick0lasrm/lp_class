@@ -2,14 +2,14 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        double ms, kmh;
+        double mS, kmH;
 
         System.out.println("Digite a velocidade em Km/h: ");
 
         Scanner in = new Scanner(System.in);
-        kmh = in.nextDouble();
+        kmH = in.nextDouble();
 
-        ms = kmh / 3.6;
-        System.out.println(kmh + " km/h equivale a " + ms + " m/s");
+        mS = kmH / 3.6;
+        System.out.println(kmH + " km/h equivale a " + mS + " m/s");
     }
 }

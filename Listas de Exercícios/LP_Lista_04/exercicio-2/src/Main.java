@@ -1,5 +1,27 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+
+        int maior, menor;
+        maior = 0;
+        menor = 0;
+
+        Scanner in = new Scanner(System.in);
+
+        for (int i=1; i <=5; i++) {
+            System.out.println("Digite o " + i + "° número inteiro");
+            int number = in.nextInt();
+
+            if (number > maior){
+                maior = number;
+            }
+            if (number < menor){
+                menor = number;
+            }
+        }
+
+        System.out.println("Maior número digitado: \n" + maior);
+        System.out.println("Menor número digitado: " + menor);
     }
 }

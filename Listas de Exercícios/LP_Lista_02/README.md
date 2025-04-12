@@ -49,7 +49,7 @@ para milhas.
 15. Receber o raio e a altura de um cilindro e calcular seu volume.
 
 16. Receber o raio e a altura de um cone e calcular seu volume.
-
+  
 17. Receber velocidade inicial, aceleração e tempo de percurso de um corpo e calcular sua velocidade.
 
 18. Receber os coeficientes $a$ e $b$ de uma equação do primeiro grau e imprimir a solução.

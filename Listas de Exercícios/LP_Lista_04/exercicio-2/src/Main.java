@@ -3,15 +3,15 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        int maior, menor;
-        maior = 0;
-        menor = 0;
+        int maior, menor, number;
+        maior = Integer.MIN_VALUE;
+        menor = Integer.MAX_VALUE;
 
         Scanner in = new Scanner(System.in);
 
         for (int i=1; i <=5; i++) {
             System.out.println("Digite o " + i + "° número inteiro");
-            int number = in.nextInt();
+            number = in.nextInt();
 
             if (number > maior){
                 maior = number;

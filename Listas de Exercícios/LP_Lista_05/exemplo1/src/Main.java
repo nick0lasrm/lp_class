@@ -7,7 +7,6 @@ public class Main {
         numbers1[2] = 5;
         numbers1[3] = 2;
 
-
         // Declaração com inicialização
         int [] numbers2 = {0,6,5,2,1};
 

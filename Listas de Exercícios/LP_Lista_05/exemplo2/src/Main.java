@@ -1,4 +1,4 @@
-public class Main {
+ public class Main {
     public static void main(String[] args) {
         // Declaração com inicialização
         int [] numbers = {0,6,5,2,1};

@@ -4,11 +4,11 @@ public class Main {
     public static void main(String[] args) {
         float base, altura, area;
 
-        System.out.println("Digite a base do triângulo: ");
-        System.out.println("Agora digite a altura: ");
-
         Scanner in = new Scanner(System.in);
+
+        System.out.println("Digite a base do triângulo: ");
         base = in.nextFloat();
+        System.out.println("Agora digite a altura: ");
         altura = in.nextFloat();
 
         area = (base * altura) / 2;

@@ -4,11 +4,11 @@ public class Main {
     public static void main(String[] args) {
         float raio, altura, volume;
 
-        System.out.println("Digite o raio do cone: ");
-        System.out.println("Agora digite a altura: ");
-
         Scanner in = new Scanner(System.in);
+
+        System.out.println("Digite o raio do cone: ");
         raio = in.nextFloat();
+        System.out.println("Agora digite a altura: ");
         altura = in.nextFloat();
 
         volume =(float) Math.PI * raio * raio * altura / 3;

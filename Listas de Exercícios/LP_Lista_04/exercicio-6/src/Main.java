@@ -2,10 +2,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        int n1, n2, i;
 
         Scanner in = new Scanner(System.in);
-
-        int n1, n2, i;
+        
         System.out.println("Digite dois números inteiros separados por espaço: ");
         n1 = in.nextInt();
         n2 = in.nextInt();

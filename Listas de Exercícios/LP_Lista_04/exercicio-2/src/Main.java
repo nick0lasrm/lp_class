@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
         int maior, menor, number;
         maior = Integer.MIN_VALUE;
         menor = Integer.MAX_VALUE;

@@ -8,7 +8,5 @@ public class Main {
             System.out.println(vetor2[i]);
         }
 
-
-
     }
 }

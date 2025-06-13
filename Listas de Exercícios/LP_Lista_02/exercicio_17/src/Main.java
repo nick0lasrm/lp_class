@@ -4,13 +4,13 @@ public class Main {
     public static void main(String[] args) {
         float velIn, acel, time, velMe;
 
-        System.out.println("Digite a velocidade inicial: ");
-        System.out.println("Digite a aceleração: ");
-        System.out.println("Digite o tempo do percurso: ");
-
         Scanner in = new Scanner(System.in);
+
+        System.out.println("Digite a velocidade inicial: ");
         velIn = in.nextFloat();
+        System.out.println("Digite a aceleração: ");
         acel = in.nextFloat();
+        System.out.println("Digite o tempo do percurso: ");
         time = in.nextFloat();
 
         velMe = velIn + acel * time;

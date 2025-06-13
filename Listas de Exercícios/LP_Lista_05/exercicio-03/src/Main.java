@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class  Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
@@ -9,12 +9,17 @@ public class Main {
         System.out.println("Digite um número inteiro: ");
         int n = in.nextInt();
 
+        boolean found = false;
+
         for (int num : nums){
             if (n == num){
                 System.out.println(num);
-            }else {
-                System.out.println("Valor não encontrado!");
+                found = true;
+                break;
             }
+        }
+        if (!found){
+            System.out.println("Valor não encontrado!");
         }
     }
 }

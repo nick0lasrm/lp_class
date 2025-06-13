@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int opcao;
+        int option;
 
         Scanner in = new Scanner(System.in);
 
@@ -11,11 +11,11 @@ public class Main {
         System.out.println("6");
         System.out.println("7");
         System.out.println("8");
-        System.out.println("8");
+        System.out.println("9");
         System.out.println("Escolha uma das opções");
-        opcao = in.nextInt();
+        option = in.nextInt();
 
-        switch (opcao){
+        switch (option){
             case 5:
                 System.out.println("Você escolheu a opção 5");
                 break;

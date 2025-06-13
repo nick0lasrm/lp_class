@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        int n, div=0;
 
         Scanner in = new Scanner(System.in);
-        int n, div=0;
 
         System.out.println("Digite um número:");
         n = in.nextInt();

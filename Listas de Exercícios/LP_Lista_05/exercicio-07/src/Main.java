@@ -14,7 +14,7 @@ public class Main {
 
         for(int linha=0;linha< matriz.length;linha++){
             somaLinhas = 0;
-           for(int col=0;col<matriz[0].length;col++);{
+           for(col=0;col<matriz[0].length;col++){
                somaLinhas += matriz[linha][col];
                 somaCol += matriz[col][linha];
             }

@@ -4,9 +4,9 @@ public class Main {
     public static void main(String[] args) {
         double a, b, c, delta, x1, x2;
 
-        System.out.println("Digite os valores de A, B e C separados por espaços: ");
-
         Scanner in = new Scanner(System.in);
+
+        System.out.println("Digite os valores de A, B e C separados por espaços: ");
         a = in.nextDouble();
         b = in.nextDouble();
         c = in.nextDouble();

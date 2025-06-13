@@ -4,9 +4,9 @@ public class Main {
     public static void main(String[] args) {
         double num, sqrt;
 
-        System.out.println("Digite um número Real: ");
-
         Scanner in = new Scanner(System.in);
+
+        System.out.println("Digite um número Real: ");
         num = in.nextDouble();
 
 

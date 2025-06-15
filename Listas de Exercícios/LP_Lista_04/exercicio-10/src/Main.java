@@ -8,7 +8,7 @@ public class Main {
 
         Scanner in = new Scanner(System.in);
 
-        System.out.println("Digite um número inteiro positivo: ");
+        System.out.println("Digite um número inteiro positivo:");
         n = in.nextInt();
 
         for (int i=0;i<n;i++){

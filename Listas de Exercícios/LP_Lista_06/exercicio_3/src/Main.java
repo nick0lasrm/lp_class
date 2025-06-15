@@ -1,5 +1,3 @@
-import com.sun.source.tree.BreakTree;
-
 import java.util.Scanner;
 
 public class Main {
@@ -13,10 +11,20 @@ public class Main {
 
         System.out.println("Digite o valor de Y");
         expoente = in.nextInt();
+
+        if (expoente < 0){
+            System.out.println("O expoente não pode ser negativo.");
+            return;
+        }
+
+        int result = potencyNum(base, expoente);
+
+        System.out.println("Resultado é: " + result);
     }
 
     public static int potencyNum(int base, int expoente){
-
+        if (expoente == 0)
+            return 1;
+        return base * potencyNum(base, expoente - 1);
     }
-    return num;
 }

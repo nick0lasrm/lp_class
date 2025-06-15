@@ -22,6 +22,7 @@ public class Main {
         return soma;
     }
 
+    /* Recursividade */
     public static int somarAntecessores(int num) {
         if(num==1)
             return 1;

@@ -21,7 +21,7 @@ public class Main {
         System.out.println("Escolha uma opção: ");
         option = in.nextInt();
 
-        switch (option){
+        switch (option) {
             case 1:
                 System.out.println("Bebida selecionada: Café Expresso");
                 if (value>=0.5){

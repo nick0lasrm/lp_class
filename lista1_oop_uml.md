@@ -100,7 +100,7 @@ Quais dados o sistema precisaria guardar sobre esse livro? Que ações poderiam 
         class Livro {
             -Nome: string
             -Tipo: string
-            -Valor: int
+            -Valor: double
             -Disponibilidade: boolean
             +Vender(qtd: int): boolean
             +Emprestar(nome: string, tipo: string, tempo: int): boolean
@@ -111,12 +111,21 @@ Quais dados o sistema precisaria guardar sobre esse livro? Que ações poderiam 
 6. **Conta Bancária:**<br>
 Considere como um sistema bancário representa uma conta de um cliente. Quais dados são essenciais? Que operações a conta deve suportar?<br>
 Modele isso como uma classe UML.
-
+ 
     ```mermaid
         classDiagram
-        class NomeDaClasse {
-            -NomeDoAtributo: tipo
-            +NomeDoMetodo(parametro: tipo): tipoDeRetorno
+        class ContaCliente {
+            -Nome: string
+            -CPF: string
+            -Tipo: string
+            -Agencia: int
+            -Conta: int
+            -Saldo: double
+            -Senha: string
+            +Acessar(cpf: string, tipo: string, senha: string): boolean
+            +VerSaldo(senha: string): void
+            +Sacar(valor: int, senha: string): boolean
+            +Depositar(agencia: int, conta: int, valor: int, senha: string): void
         }
     ```
 
@@ -126,8 +135,11 @@ Crie uma classe que represente esse "usuário" de forma genérica, com seus atri
 
     ```mermaid
         classDiagram
-        class NomeDaClasse {
-            -NomeDoAtributo: tipo
+        class Usuario {
+            -Nome: string
+            -Sobrenome: string
+            -Email: string
+            -Senha: string
             +NomeDoMetodo(parametro: tipo): tipoDeRetorno
         }
     ```
